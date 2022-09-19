@@ -32,19 +32,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于glut搭建简易图形学实验框架</title>
-    <url>/2022/09/19/openGLFramework/</url>
-    <content><![CDATA[<h1 id="基于glut搭建简易图形学实验框架"><a href="#基于glut搭建简易图形学实验框架" class="headerlink" title="基于glut搭建简易图形学实验框架"></a>基于glut搭建简易图形学实验框架</h1><p>还没有写，比较花时间……</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>OpenGL</tag>
-        <tag>图形学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>学术论文索引</title>
     <url>/2022/09/19/academicPaper/</url>
     <content><![CDATA[<h1 id="学术论文索引（持续更新）"><a href="#学术论文索引（持续更新）" class="headerlink" title="学术论文索引（持续更新）"></a>学术论文索引（持续更新）</h1><p>虽然我现在只是一棵小小的种子，但是终有一天会发芽成长，变成一棵大树</p>
@@ -57,6 +44,19 @@
         <tag>机器学习</tag>
         <tag>因果推断</tag>
         <tag>认知诊断</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于glut搭建简易图形学实验框架</title>
+    <url>/2022/09/19/openGLFramework/</url>
+    <content><![CDATA[<h1 id="基于glut搭建简易图形学实验框架"><a href="#基于glut搭建简易图形学实验框架" class="headerlink" title="基于glut搭建简易图形学实验框架"></a>基于glut搭建简易图形学实验框架</h1><p>还没有写，比较花时间……</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>OpenGL</tag>
+        <tag>图形学</tag>
       </tags>
   </entry>
 </search>
