@@ -419,15 +419,13 @@ $(function() {
 					{typed.destroy(); typed = null;}
 				else{
 					if($("#hitokoto").data('st') == true){
-						$.get("https://v1.hitokoto.cn/", function (data) {
-						var data = data;
-						var str =  data.hitokoto + " ——  By "		
+						// $.get("https://v1.hitokoto.cn/", function (data) {
+                        {
+                        // var data = data;
+						var str =  "今天也是追逐热爱的一天！"
 						var options = {
-						  strings: [ 
-							//str + "Who??^1000",
-							//str + "It's me^2000",
-							//str +'Haha, make a joke',
-							str + data.from,
+						  strings: [
+							str,
 						  ],
 						  typeSpeed: 90,
 						  startDelay: 500,
@@ -436,7 +434,7 @@ $(function() {
 						  //loop: true,
 						}
 						typed = new Typed(".hitokoto .typed", options);
-						})
+						}
 					}
 				}	
                 return false;
