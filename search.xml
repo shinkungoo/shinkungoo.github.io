@@ -15,6 +15,19 @@
       </tags>
   </entry>
   <entry>
+    <title>基于glut搭建简易图形学实验框架</title>
+    <url>/2022/09/19/openGLFramework/</url>
+    <content><![CDATA[<h1 id="基于glut搭建简易图形学实验框架"><a href="#基于glut搭建简易图形学实验框架" class="headerlink" title="基于glut搭建简易图形学实验框架"></a>基于glut搭建简易图形学实验框架</h1><p>框架已经搭建完成，博客的书写需要时间</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>OpenGL</tag>
+        <tag>图形学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cognitive Modelling for Predicting Examinee Performance论文阅读笔记</title>
     <url>/2022/09/19/ReviewCMPEP/</url>
     <content><![CDATA[<h1 id="Cognitive-Modelling-for-Predicting-Examinee-Performance-论文阅读笔记"><a href="#Cognitive-Modelling-for-Predicting-Examinee-Performance-论文阅读笔记" class="headerlink" title="Cognitive Modelling for Predicting Examinee Performance 论文阅读笔记"></a>Cognitive Modelling for Predicting Examinee Performance 论文阅读笔记</h1><p>这部分还在写，挺长的……需要花时间去写文章的内容</p>
@@ -28,19 +41,6 @@
         <tag>机器学习</tag>
         <tag>认知诊断</tag>
         <tag>论文阅读</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于glut搭建简易图形学实验框架</title>
-    <url>/2022/09/19/openGLFramework/</url>
-    <content><![CDATA[<h1 id="基于glut搭建简易图形学实验框架"><a href="#基于glut搭建简易图形学实验框架" class="headerlink" title="基于glut搭建简易图形学实验框架"></a>基于glut搭建简易图形学实验框架</h1><p>框架已经搭建完成，博客的书写需要时间</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>OpenGL</tag>
-        <tag>图形学</tag>
       </tags>
   </entry>
 </search>
