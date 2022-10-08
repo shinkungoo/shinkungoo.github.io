@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="zh" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Machine Learning 学习笔记 01 - 沈君豪的个人主页</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="沈君豪,"> 
+    <meta name="description" content="这里是沈君豪的学术个人主页，记录自己思考的轨迹与成长与过去,本博客阅读的书籍是《机器学习》，作者为周志华
+
+机器学习所研究的主要内容，是关于在计算机上从数据中产生”模型”的算法，即学习算法（learning algorithm）。而”模型”泛指从数据中学得的,"> 
+    <meta name="author" content="Shen Junhao"> 
+    <link rel="alternative" href="atom.xml" title="沈君豪的个人主页" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Machine Learning 学习笔记 01 - 沈君豪的个人主页"/>
+    <meta name="twitter:description" content="这里是沈君豪的学术个人主页，记录自己思考的轨迹与成长与过去,本博客阅读的书籍是《机器学习》，作者为周志华
+
+机器学习所研究的主要内容，是关于在计算机上从数据中产生”模型”的算法，即学习算法（learning algorithm）。而”模型”泛指从数据中学得的,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="沈君豪的个人主页"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Machine Learning 学习笔记 01 - 沈君豪的个人主页"/>
+    <meta property="og:description" content="这里是沈君豪的学术个人主页，记录自己思考的轨迹与成长与过去,本博客阅读的书籍是《机器学习》，作者为周志华
+
+机器学习所研究的主要内容，是关于在计算机上从数据中产生”模型”的算法，即学习算法（learning algorithm）。而”模型”泛指从数据中学得的,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">沈君豪的个人主页</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://shinkungoo.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Machine Learning 学习笔记 01</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Machine Learning 学习笔记 01</h1>
+        <div class="stuff">
+            <span>九月 21, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p><img src="/img/MachineLearning/cover.png"><br>本博客阅读的书籍是《机器学习》，作者为周志华</p>
+<hr>
+<p>机器学习所研究的主要内容，是关于在计算机上从数据中产生”模型”的算法，即学习算法（learning algorithm）。而”模型”泛指从数据中学得的结果</p>
+<h2 id="1-基本术语"><a href="#1-基本术语" class="headerlink" title="1. 基本术语"></a>1. 基本术语</h2><h3 id="1-1-数据集（data-set）"><a href="#1-1-数据集（data-set）" class="headerlink" title="1.1. 数据集（data set）"></a>1.1. 数据集（data set）</h3><p>一组记录的集合称之为数据集，其中每条记录关于一个事件或对象的描述，称之为示例（instance）或者样本（sample）。</p>
+<p>而每条记录中反映事件或对象在某方面的表现或性质的事项称之为属性（attribute）或者特征（feature）。属性的取值称之为属性值（attribute value）。属性张成的空间称之为属性空间（attribute space）或者样本空间（sample space）。</p>
+<p>如果我们把每条记录中的属性标记在坐标轴上，那么每个记录其对应的属性值都可以在空间中找到一个点。因此我们也把一个示例称作一个特征向量（feature vector）</p>
+<p>数学描述的话，一般地，令$D&#x3D;{\boldsymbol{x_1},\boldsymbol{x_2}, \dots, \boldsymbol{x_m}}$表示包含$m$个示例的数据集，每个示例都有$d$个属性描述，即每个示例$\boldsymbol{x_i}&#x3D;(x_{i1},x_{i2}, \dots, x_{x_{id}})$是$d$维样本空间$\mathcal{X}$中的一个向量，$\boldsymbol{x_i} \in \mathcal{X}$，其中$x_{ij}$是$\boldsymbol{x_i}$在第$j$个属性上的取值，$d$称为样本的维度（dimensionality）</p>
+<h3 id="1-2-学习（learning）"><a href="#1-2-学习（learning）" class="headerlink" title="1.2. 学习（learning）"></a>1.2. 学习（learning）</h3><p>从数据中学得模型的过程称之为学习或者训练，这个过程通过执行某种学习算法来完成。学得模型对应了关于数据的某种潜在的规律，因此也称之为假设（hypothesis）</p>
+<p>在学习过程中，关于示例结果的信息，称之为标记（label），有标记信息的示例就是样例（example）。</p>
+<p>一般地，使用$(\boldsymbol{x_i},y_i)$来表示第$i$个样例，其中$y_i \in \mathcal{Y}$是示例$\boldsymbol{x_i}$的标记，$\mathcal{Y}$是标记的集合，也称作标记空间（label space）。</p>
+<h3 id="1-3-预测（prediction）"><a href="#1-3-预测（prediction）" class="headerlink" title="1.3. 预测（prediction）"></a>1.3. 预测（prediction）</h3><p>如果我们预测的是离散值，那么此类学习任务称之为分类（classification）；若预测的是连续值，那么此类学习任务称之为回归（regression）。对只涉及两个类别的二分法（binary classification）任务，通常把其中一个称为正类（positive class），另一个为负类（negative class）；涉及多个分类问题时，就是多分类问题（multi-class classification）</p>
+<p>一般地，预测任务 是希望通过对训练集${(\boldsymbol{x_1},y_1),(\boldsymbol{x_2},y_2),\dots, (\boldsymbol{x_m},y_m)}$进行学习，建立一个输入空间到输出空间的映射$f: \mathcal{X} \mapsto \mathcal{Y}$。对于二分类任务，通常令$\mathcal{Y}&#x3D;{1,-1}$或者${0,1}$；对于多分类问题，$|\mathcal{Y}|&gt;2$；而对于回归问题，那么$\mathcal{Y}&#x3D;\mathbb{R}$。</p>
+<p>学成模型后，我们还可以对其进行测试（testing），被预测的样本称之为（testing sample）</p>
+<h3 id="1-4-聚类（clustering）"><a href="#1-4-聚类（clustering）" class="headerlink" title="1.4. 聚类（clustering）"></a>1.4. 聚类（clustering）</h3><p>将训练集中不同记录分成若干组，每组称之为一个簇（cluster）。一般情况下这样的训练集中没有标记信息。</p>
+<blockquote>
+<p>另外，根据训练集是否有标记信息，可以把学习任务分为两大类：监督学习（supervised learning）和无监督学习（unsupervised learning）。分类和回归是前者的代表，聚类是后者的代表。</p>
+</blockquote>
+<h3 id="1-5-泛化（generalization）"><a href="#1-5-泛化（generalization）" class="headerlink" title="1.5. 泛化（generalization）"></a>1.5. 泛化（generalization）</h3><p>学得模型适用于新样本的能力称为泛化。具有强大泛化能力的模型能够很好的适应样本空间。通常我们假设样本空间中全体样本的分布服从一个未知分布$\mathcal{D}$，我们获得的每个样本都是独立地从这个分布上采样获得的，即独立同分布（independent and identical distributed，简称i.i.d）。一般而言，训练样本越多，我们得到关于$\mathcal{D}$的信息越多，模型的泛化能力可能会越强。</p>
+<blockquote>
+<p>实际上，样本空间的规模都是巨大的，我们不可能全部使用一遍用来训练。</p>
+</blockquote>
+<h3 id="1-6-归纳学习（inductive-learning）"><a href="#1-6-归纳学习（inductive-learning）" class="headerlink" title="1.6 归纳学习（inductive learning）"></a>1.6 归纳学习（inductive learning）</h3><p>“从样例中学习”是归纳学习的过程。</p>
+<p>广义的归纳学习大体相当于机器学习，而狭义的归纳学习则要求从训练数据中学得概念，概念学习中最基本的是布尔学习。在这个过程中程序“记住”了样本，但是我们要泛化，所以可以把这个学习过程看作是一个在所有假设（hypothesis）组成的空间中进行搜索的过程，搜索的目标是找到与训练集匹配（fit）的假设。假设的表示一旦确定，假设空间的规模大小就确定了。</p>
+<blockquote>
+<p>在现实问题中没有雨假设空间很大，我们时常只是用有限的样本，因此会导致有多个假设与训练集一直，即存在一个和训练集一致的假设集合，称之为版本空间（version space）</p>
+</blockquote>
+<h3 id="1-7-归纳偏好（inductive-bias）"><a href="#1-7-归纳偏好（inductive-bias）" class="headerlink" title="1.7 归纳偏好（inductive bias）"></a>1.7 归纳偏好（inductive bias）</h3><p>针对有限的样本，我们很难断定哪一个假设更好，这时候算法本身的偏好很重要。比如有些时候算法喜欢“特殊”的模型，有些时候算法喜欢“尽可能一般”的模型。</p>
+<p><img src="/img/MachineLearning/0000.png"></p>
+<p>上图中，如果认为相似样本应有相似的输出，那么就应该是比较平滑的曲线$A$而不是$B$。</p>
+<p>一般情况下，我们可以认为“若多个假设与观察一致，则选最简单的那个”。</p>
+<h3 id="1-8-“没有免费的午餐”定理（No-Free-Lunch-Theorem）"><a href="#1-8-“没有免费的午餐”定理（No-Free-Lunch-Theorem）" class="headerlink" title="1.8 “没有免费的午餐”定理（No Free Lunch Theorem）"></a>1.8 “没有免费的午餐”定理（No Free Lunch Theorem）</h3><p>不同归纳算法之间的误差期望没有谁更优，都是一样的。也就是说我们令$f$为希望学习的真实目标函数，$\mathcal{L}_a, \mathcal{L}_b$是两种不同的学习方法，那么他们的总误差满足：</p>
+<p>$$<br>\sum_fE_{ote}(\mathcal{L}_a|X,f)&#x3D;\sum_fE_{ote}(\mathcal{L}_b|X,f)<br>$$</p>
+<p>事实上，NFL定理有一个前提，那就是所有问题出现的机会向灯，或者说所有问题同等重要，然后在实际问题中并不是这样的，我们可以在规定问题后找出一个更加优越的算法。</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="true"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+
+</html>
