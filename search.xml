@@ -180,10 +180,9 @@
       </tags>
   </entry>
   <entry>
-    <title>gitbook</title>
-    <url>/gitbook/index.html</url>
-    <content><![CDATA[<p>已有Gitbook索引：<br>Gitbook Index:</p>
-<p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
+    <title>academic</title>
+    <url>/academic/index.html</url>
+    <content><![CDATA[<p>已有Paper索引：<br>Paper Index:</p>
 ]]></content>
   </entry>
   <entry>
@@ -192,14 +191,8 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>academic</title>
-    <url>/academic/index.html</url>
-    <content><![CDATA[<p>已有Paper索引：<br>Paper Index:</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>categories</title>
-    <url>/categories/index.html</url>
+    <title>tags</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -208,8 +201,15 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
+    <title>categories</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>gitbook</title>
+    <url>/gitbook/index.html</url>
+    <content><![CDATA[<p>已有Gitbook索引：<br>Gitbook Index:</p>
+<p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
+]]></content>
   </entry>
 </search>
