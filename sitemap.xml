@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://shinkungoo.github.io/academic/index.html</loc>
+    <loc>http://shinkungoo.github.io/profile/index.html</loc>
     
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://shinkungoo.github.io/publications/index.html</loc>
+    
+    <lastmod>2023-01-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://shinkungoo.github.io/2022/09/20/CausalityLearning02/</loc>
+    
+    <lastmod>2022-10-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -65,15 +83,6 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/about/index.html</loc>
-    
-    <lastmod>2022-09-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://shinkungoo.github.io/search/index.html</loc>
     
     <lastmod>2022-09-18</lastmod>
@@ -103,7 +112,7 @@
 
   <url>
     <loc>http://shinkungoo.github.io/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -111,49 +120,49 @@
   
   <url>
     <loc>http://shinkungoo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://shinkungoo.github.io/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/</loc>
-    <lastmod>2022-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2022-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://shinkungoo.github.io/tags/%E8%AE%A4%E7%9F%A5%E8%AF%8A%E6%96%AD/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shinkungoo.github.io/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2023-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://shinkungoo.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://shinkungoo.github.io/tags/OpenGL/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://shinkungoo.github.io/tags/%E5%9B%BE%E5%BD%A2%E5%AD%A6/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -162,14 +171,14 @@
   
   <url>
     <loc>http://shinkungoo.github.io/categories/%E5%AD%A6%E6%9C%AF/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://shinkungoo.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2022-10-08</lastmod>
+    <lastmod>2023-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

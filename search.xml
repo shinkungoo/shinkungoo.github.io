@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>统计因果推理学习 02</title>
+    <url>/2022/09/20/CausalityLearning02/</url>
+    <content><![CDATA[<p><img src="/img/Causality/cover.png"></p>
+<p>本博客阅读书本为<em>Causality Inference in Statistics: A Primer</em>（中文译《统计因果推理入门》），作者Judea Pearl</p>
+<hr>
+<p>如果沉溺于相关性的美梦，那么就永远不会醒来看到新生的太阳了。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>因果推断</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>统计因果推理学习 01</title>
     <url>/2022/09/20/CausalityLearning01/</url>
     <content><![CDATA[<p><img src="/img/Causality/cover.png"></p>
@@ -94,6 +110,48 @@
       </tags>
   </entry>
   <entry>
+    <title>Cognitive Modelling for Predicting Examinee Performance论文阅读笔记</title>
+    <url>/2022/09/19/ReviewCMPEP/</url>
+    <content><![CDATA[<p>这部分还在写，挺长的……需要花时间去写文章的内容</p>
+<p>不过这个是长时间更新的项目，我希望多花点时间去做这些事情</p>
+<p>希望一切安好</p>
+]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>认知诊断</tag>
+        <tag>论文阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Generative Adversarial Nets论文阅读笔记</title>
+    <url>/2022/09/19/ReciewGAN/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>学术</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>论文阅读</tag>
+        <tag>神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于glut搭建简易图形学实验框架</title>
+    <url>/2022/09/19/openGLFramework/</url>
+    <content><![CDATA[<h1 id="基于glut搭建简易图形学实验框架"><a href="#基于glut搭建简易图形学实验框架" class="headerlink" title="基于glut搭建简易图形学实验框架"></a>基于glut搭建简易图形学实验框架</h1><p>框架已经搭建完成，博客的书写需要时间</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>OpenGL</tag>
+        <tag>图形学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Machine Learning 学习笔记 01</title>
     <url>/2022/10/08/MachineLearning01/</url>
     <content><![CDATA[<p><img src="/img/MachineLearning/cover.png"><br>本博客阅读的书籍是《机器学习》，作者为周志华</p>
@@ -138,67 +196,11 @@
       </tags>
   </entry>
   <entry>
-    <title>Generative Adversarial Nets论文阅读笔记</title>
-    <url>/2022/09/19/ReciewGAN/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>神经网络</tag>
-        <tag>论文阅读</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cognitive Modelling for Predicting Examinee Performance论文阅读笔记</title>
-    <url>/2022/09/19/ReviewCMPEP/</url>
-    <content><![CDATA[<p>这部分还在写，挺长的……需要花时间去写文章的内容</p>
-<p>不过这个是长时间更新的项目，我希望多花点时间去做这些事情</p>
-<p>希望一切安好</p>
+    <title>gitbook</title>
+    <url>/gitbook/index.html</url>
+    <content><![CDATA[<p>已有Gitbook索引：<br>Gitbook Index:</p>
+<p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
 ]]></content>
-      <categories>
-        <category>学术</category>
-      </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>论文阅读</tag>
-        <tag>认知诊断</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于glut搭建简易图形学实验框架</title>
-    <url>/2022/09/19/openGLFramework/</url>
-    <content><![CDATA[<h1 id="基于glut搭建简易图形学实验框架"><a href="#基于glut搭建简易图形学实验框架" class="headerlink" title="基于glut搭建简易图形学实验框架"></a>基于glut搭建简易图形学实验框架</h1><p>框架已经搭建完成，博客的书写需要时间</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>OpenGL</tag>
-        <tag>图形学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>academic</title>
-    <url>/academic/index.html</url>
-    <content><![CDATA[<p>已有Paper索引：<br>Paper Index:</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>about</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>search</title>
-    <url>/search/index.html</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>categories</title>
@@ -206,10 +208,24 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>gitbook</title>
-    <url>/gitbook/index.html</url>
-    <content><![CDATA[<p>已有Gitbook索引：<br>Gitbook Index:</p>
-<p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
+    <title>profile</title>
+    <url>/profile/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>publications</title>
+    <url>/publications/index.html</url>
+    <content><![CDATA[<p>已有Paper索引：<br>Paper Index:</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>search</title>
+    <url>/search/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>tags</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

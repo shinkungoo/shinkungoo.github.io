@@ -2141,7 +2141,7 @@ var _gestureStartTime,
 	},
 
 
-	// Returns object with data about gesture
+	// Returns object with data profile gesture
 	// It's created only once and then reused
 	_initDragReleaseAnimationData  = function() {
 		// temp local vars
