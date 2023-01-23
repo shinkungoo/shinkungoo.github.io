@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://shinkungoo.github.io/2023/01/23/LaTeXReference/</loc>
+    <loc>http://jhshen.cn/2023/01/23/LaTeXReference/</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/2022/09/20/CausalityLearning01/</loc>
+    <loc>http://jhshen.cn/2022/09/20/CausalityLearning01/</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/2022/09/20/CausalityLearning02/</loc>
+    <loc>http://jhshen.cn/2022/09/20/CausalityLearning02/</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/profile/index.html</loc>
+    <loc>http://jhshen.cn/profile/index.html</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/gitbook/index.html</loc>
+    <loc>http://jhshen.cn/gitbook/index.html</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/publications/index.html</loc>
+    <loc>http://jhshen.cn/publications/index.html</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/2022/10/08/MachineLearning01/</loc>
+    <loc>http://jhshen.cn/2022/10/08/MachineLearning01/</loc>
     
     <lastmod>2022-10-08</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/search/index.html</loc>
+    <loc>http://jhshen.cn/search/index.html</loc>
     
     <lastmod>2022-09-18</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/tags/index.html</loc>
+    <loc>http://jhshen.cn/tags/index.html</loc>
     
     <lastmod>2022-09-18</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/categories/index.html</loc>
+    <loc>http://jhshen.cn/categories/index.html</loc>
     
     <lastmod>2022-09-18</lastmod>
     
@@ -93,7 +93,7 @@
   
 
   <url>
-    <loc>http://shinkungoo.github.io/</loc>
+    <loc>http://jhshen.cn/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -101,28 +101,28 @@
 
   
   <url>
-    <loc>http://shinkungoo.github.io/tags/Machine-Learning/</loc>
+    <loc>http://jhshen.cn/tags/Machine-Learning/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/tags/Causality-Inference/</loc>
+    <loc>http://jhshen.cn/tags/Causality-Inference/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/tags/LaTeX/</loc>
+    <loc>http://jhshen.cn/tags/LaTeX/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://jhshen.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -131,21 +131,21 @@
 
   
   <url>
-    <loc>http://shinkungoo.github.io/categories/Academic/</loc>
+    <loc>http://jhshen.cn/categories/Academic/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/categories/Reference/</loc>
+    <loc>http://jhshen.cn/categories/Reference/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/categories/%E5%AD%A6%E6%9C%AF/</loc>
+    <loc>http://jhshen.cn/categories/%E5%AD%A6%E6%9C%AF/</loc>
     <lastmod>2023-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
