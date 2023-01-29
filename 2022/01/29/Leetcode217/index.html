@@ -66,7 +66,7 @@
         <div class="stuff">
             <span>一月 29, 2022</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/LeetCode/" rel="tag">LeetCode</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/STL-map/" rel="tag">STL-map</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/STL-set/" rel="tag">STL-set</a></li></ul>
 
 
         </div>
@@ -85,6 +85,19 @@
 <li><code>1 &lt;= nums.length &lt;= 10^5</code></li>
 <li><code>-10^9 &lt;= nums[i] &lt;= 10^9</code></li>
 </ul>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>When it comes to detecting duplicate, obviously we can utilize <code>map</code> or <code>set</code><br>(certainly including <code>unordered_map</code> or <code>unordered_set</code>). We can count the times of<br>occurrence of each number, but the count of them can not offer us more insight of this problem.<br>In fact, we only need to know whether it contains duplicate or not. </p>
+<p>It’s clear that the size of <code>map</code> or <code>set</code> will augment if and only if the key of new input is distinguished<br>from all the members in them. Therefore, if the size of them is less than the size of input number vector, we<br>can assert the input contains duplicate.</p>
+<p>Based on the aforementioned analysis, we can code.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">containsDuplicate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">unordered_set&lt;<span class="type">int</span>&gt; <span class="title">sets</span><span class="params">(nums.begin(), nums.end())</span></span>;</span><br><span class="line">        <span class="keyword">return</span> sets.<span class="built_in">size</span>() != nums.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
@@ -117,7 +130,7 @@
     </div>
     
         <div class="side">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-Statement"><span class="toc-number">1.</span> <span class="toc-text">Problem Statement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Constrain"><span class="toc-number">2.</span> <span class="toc-text">Constrain</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-Statement"><span class="toc-number">1.</span> <span class="toc-text">Problem Statement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Constrain"><span class="toc-number">2.</span> <span class="toc-text">Constrain</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Analysis"><span class="toc-number">3.</span> <span class="toc-text">Analysis</span></a></li></ol>
         </div>
     
 </div>
