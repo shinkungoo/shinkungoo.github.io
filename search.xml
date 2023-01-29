@@ -1299,13 +1299,35 @@
   </entry>
   <entry>
     <title>LeetCode 53. Maximum Subarray</title>
-    <url>/2023/01/23/Leetcode53/</url>
-    <content><![CDATA[]]></content>
+    <url>/2022/01/29/Leetcode53/</url>
+    <content><![CDATA[<h2 id="Problem-Statement"><a href="#Problem-Statement" class="headerlink" title="Problem Statement"></a>Problem Statement</h2><p>Given an integer array <code>nums</code>, find the subarray with the largest sum, and return <em>its sum</em>.</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">Input: nums = [-2,1,-3,4,-1,2,1,-5,4]</span><br><span class="line">Output: 6</span><br><span class="line">Explanation: The subarray [4,-1,2,1] has the largest sum 6.</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example 2:</strong></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">Input: nums = [1]</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: The subarray [1] has the largest sum 1.</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example 3:</strong></p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">Input: nums = [5,4,-1,7,8]</span><br><span class="line">Output: 23</span><br><span class="line">Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.</span><br></pre></td></tr></table></figure>
+
+<h2 id="Constrain"><a href="#Constrain" class="headerlink" title="Constrain"></a>Constrain</h2><ul>
+<li><code>1 &lt;= nums.length &lt;= 10^5</code></li>
+<li><code>-10^4 &lt;= nums[i] &lt;= 10^4</code></li>
+</ul>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>Given the notation $f(i)$ representing the maximum sum of subsequence ending with the $i$th number, we can perceive the answer should be:<br>$$<br>\max_{0 \le i \le n-1}{f(i)}<br>$$<br>Therefore, we only need to find the largest $f(i)$. The most simple solution is that we can traverse all possible sums and select the largest one. However, the time complexity will reach $O(n^3)$ (after being a little bit optimized it will be $O(n^2)$). So we have to change our mind.</p>
+<p>Considering the current position is $j$th, if $f(j-1)$ is negative, we know that no matter how large the number after here the sum can’t be the maximum one, so we can assign $f(j)$ to <code>nums[j]</code>; if not, we can add $f(j)$ to <code>nums[j]</code>. So we know that<br>$$<br>f(j+1)&#x3D;<br>\begin{cases}<br>    nums[j+1],&amp;\text{if} f(j) &lt; 0\\<br>    f(j) + nums[j+1],&amp;\text{if} f(j) \ge 0<br>\end{cases}<br>$$</p>
+<p>The time complexity of this algorithm is $O(n)$ and space complexity is $O(1)$. Besides, an extra advantage of this algorithm is that it makes only one pass through the data, and once <code>nums[i]</code> is read and processed, it does not need to be remembered. Thus, if the array is on a disk or tape, it can be read sequentially, and there is no need to store any part of it in main memory. Furthermore, at any point in time, the algorithm can correctly give an answer to the subsequence problem for the data it has already read. </p>
+<p>Algorithms that can do this are called <strong>online algorithms</strong>. The online algorithm requires only constant space and runs in linear time.</p>
+<p>Based on the aforementioned analysis, we can code.</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxSubArray</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> i = <span class="number">0</span>, j = <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> max = nums[i], current = nums[i];</span><br><span class="line">        <span class="keyword">for</span>(; j &lt; nums.<span class="built_in">size</span>(); j ++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(current &lt; <span class="number">0</span>)&#123;</span><br><span class="line">                i = j;</span><br><span class="line">                current = nums[i];</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                current += nums[j];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(current &gt; max)&#123;</span><br><span class="line">                max = current;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> max;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems:"></a>Related Problems:</h2>]]></content>
       <categories>
-        <category>Online Judge</category>
+        <category>LeetCode</category>
       </categories>
       <tags>
-        <tag>LeetCode</tag>
+        <tag>Online Algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -1325,19 +1347,14 @@
 <li><code>1 &lt;= nums.length &lt;= 10^5</code></li>
 <li><code>-10^9 &lt;= nums[i] &lt;= 10^9</code></li>
 </ul>
-<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>When it comes to detecting duplicate, obviously we can utilize <code>map</code> or <code>set</code><br>(certainly including <code>unordered_map</code> or <code>unordered_set</code>). We can count the times of<br>occurrence of each number, but the count of them can not offer us more insight of this problem.<br>In fact, we only need to know whether it contains duplicate or not. </p>
-<p>It’s clear that the size of <code>map</code> or <code>set</code> will augment if and only if the key of new input is distinguished<br>from all the members in them. Therefore, if the size of them is less than the size of input number vector, we<br>can assert the input contains duplicate.</p>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>When it comes to detecting duplicate, obviously we can utilize <code>map</code> or <code>set</code> (certainly including <code>unordered_map</code> or <code>unordered_set</code>). We can count the times of occurrence of each number, but the count of them can not offer us more insight of this problem. In fact, we only need to know whether it contains duplicate or not. </p>
+<p>It’s clear that the size of <code>map</code> or <code>set</code> will augment if and only if the key of new input is distinguished from all the members in them. Therefore, if the size of them is less than the size of input number vector, we can assert the input contains duplicate.</p>
 <p>Based on the aforementioned analysis, we can code.</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">containsDuplicate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">unordered_set&lt;<span class="type">int</span>&gt; <span class="title">sets</span><span class="params">(nums.begin(), nums.end())</span></span>;</span><br><span class="line">        <span class="keyword">return</span> sets.<span class="built_in">size</span>() != nums.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
+<h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems"></a>Related Problems</h2><ul>
+<li><a href="/2022/01/29/Leetcode287/">LeetCode 287. Find the Duplicate Number</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>LeetCode</category>
@@ -1345,6 +1362,20 @@
       <tags>
         <tag>STL-map</tag>
         <tag>STL-set</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode 53. Find the Duplicate Number</title>
+    <url>/2022/01/29/Leetcode287/</url>
+    <content><![CDATA[<h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems"></a>Related Problems</h2><ul>
+<li><a href="/2022/01/29/Leetcode217/">LeetCode 217. Contains Duplicate</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>Tortoise and Hare Algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -1362,6 +1393,7 @@
     <url>/gitbook/index.html</url>
     <content><![CDATA[<p>Here are some Gitbooks written by me, including manuals, key to problems and study guide.</p>
 <p>Gitbook Index:</p>
+<p>2023-02-25: ECNU编程思维与实践课程题解——以数据结构和算法为基础</p>
 <p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
 ]]></content>
   </entry>
@@ -1387,7 +1419,8 @@
   <entry>
     <title>publications</title>
     <url>/publications/index.html</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>Mingjia Li, Hong Qian, Shuo Liu, Junhao Shen, Aiming Zhou, Qi Liu,<br>D^3E: A Causal Decision-Making Framework for Long-Term Cumulative Cognitive Enhancement in Student Learning,<br>The 40th International Conference on Machine Learning (ICML 2023) Hawaii, USA, July 23rd-29th.</p>
+]]></content>
   </entry>
   <entry>
     <title>tags</title>
