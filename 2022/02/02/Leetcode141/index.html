@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>LeetCode 217. Contains Duplicate - 沈君豪个人主页 - Junhao Shen&#39;s Homepage</title>
+    <title>LeetCode 141. Linked List Cycle - 沈君豪个人主页 - Junhao Shen&#39;s Homepage</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="沈君豪,"> 
-    <meta name="description" content="My blogs, Gitbooks and profile.,Problem StatementGiven an integer array nums, return true if any value appears at least twice in th,"> 
+    <meta name="description" content="My blogs, Gitbooks and profile.,Problem StatementGiven head, the head of a linked list, determine if the linked list has a cycle in,"> 
     <meta name="author" content="Junhao Shen"> 
     <link rel="alternative" href="atom.xml" title="沈君豪个人主页 - Junhao Shen&#39;s Homepage" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -20,16 +20,16 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="LeetCode 217. Contains Duplicate - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
-    <meta name="twitter:description" content="My blogs, Gitbooks and profile.,Problem StatementGiven an integer array nums, return true if any value appears at least twice in th,"/>
+    <meta name="twitter:title" content="LeetCode 141. Linked List Cycle - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
+    <meta name="twitter:description" content="My blogs, Gitbooks and profile.,Problem StatementGiven head, the head of a linked list, determine if the linked list has a cycle in,"/>
     
     
     
     
     <meta property="og:site_name" content="沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="LeetCode 217. Contains Duplicate - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
-    <meta property="og:description" content="My blogs, Gitbooks and profile.,Problem StatementGiven an integer array nums, return true if any value appears at least twice in th,"/>
+    <meta property="og:title" content="LeetCode 141. Linked List Cycle - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
+    <meta property="og:description" content="My blogs, Gitbooks and profile.,Problem StatementGiven head, the head of a linked list, determine if the linked list has a cycle in,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -47,7 +47,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://shinkungoo.github.io"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">LeetCode 217. Contains Duplicate</h3>
+    <h3 class="subtitle">LeetCode 141. Linked List Cycle</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -62,35 +62,47 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">LeetCode 217. Contains Duplicate</h1>
+        <h1 class="title">LeetCode 141. Linked List Cycle</h1>
         <div class="stuff">
-            <span>一月 29, 2022</span>
+            <span>二月 02, 2022</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/STL-map/" rel="tag">STL-map</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/STL-set/" rel="tag">STL-set</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Tortoise-and-Hare-Algorithm/" rel="tag">Tortoise and Hare Algorithm</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <h2 id="Problem-Statement"><a href="#Problem-Statement" class="headerlink" title="Problem Statement"></a>Problem Statement</h2><p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
-<p><strong>Example 1:</strong></p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1,2,3,1]</span><br><span class="line">Output: true</span><br></pre></td></tr></table></figure>
+            <h2 id="Problem-Statement"><a href="#Problem-Statement" class="headerlink" title="Problem Statement"></a>Problem Statement</h2><p>Given <code>head</code>, the head of a linked list, determine if the linked list has a cycle in it.</p>
+<p>There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the <code>next</code> pointer. Internally, <code>pos</code> is used to denote the index of the node that tail’s <code>next</code> pointer is connected to. <strong>Note that <code>pos</code> is not passed as a parameter.</strong></p>
+<p>Return <code>true</code> <em>if there is a cycle in the linked list</em>. Otherwise, return <code>false</code>.</p>
+<p><strong>Example 1:</strong><br><img src="/img/LeetCode/141/0000.png"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [3,2,0,-4], pos = 1</span><br><span class="line">Output: true</span><br><span class="line">Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).</span><br></pre></td></tr></table></figure>
 
-<p><strong>Example 2:</strong></p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1,2,3,4]</span><br><span class="line">Output: false</span><br></pre></td></tr></table></figure>
+<p><strong>Example 2:</strong><br><img src="/img/LeetCode/141/0001.png"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [1,2], pos = 0</span><br><span class="line">Output: true</span><br><span class="line">Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.</span><br></pre></td></tr></table></figure>
 
-<p><strong>Example 3:</strong></p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1,1,1,3,3,4,3,2,4,2]</span><br><span class="line">Output: true</span><br></pre></td></tr></table></figure>
+<p><strong>Example 3:</strong><br><img src="/img/LeetCode/141/0002.png"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: head = [1], pos = -1</span><br><span class="line">Output: false</span><br><span class="line">Explanation: There is no cycle in the linked list.</span><br></pre></td></tr></table></figure>
 
 <h2 id="Constrain"><a href="#Constrain" class="headerlink" title="Constrain"></a>Constrain</h2><ul>
-<li><code>1 &lt;= nums.length &lt;= 10^5</code></li>
-<li><code>-10^9 &lt;= nums[i] &lt;= 10^9</code></li>
+<li><code>The number of the nodes in the list is in the range [0, 10^4].</code></li>
+<li><code>-10^5 &lt;= Node.val &lt;= 10^5</code></li>
+<li><code>pos is -1 or a valid index in the linked-list.</code></li>
 </ul>
-<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>When it comes to detecting duplicate, obviously we can utilize <code>map</code> or <code>set</code> (certainly including <code>unordered_map</code> or <code>unordered_set</code>). We can count the times of occurrence of each number, but the count of them can not offer us more insight of this problem. In fact, we only need to know whether it contains duplicate or not. </p>
-<p>It’s clear that the size of <code>map</code> or <code>set</code> will augment if and only if the key of new input is distinguished from all the members in them. Therefore, if the size of them is less than the size of input number vector, we can assert the input contains duplicate.</p>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>A simple way is that we can use hash table to label whether this node has been visited or not. Specifically, we can store the address of the node in the hash table when traversing this linked list. If the address of current node is found in the table, we can figure out that there is a cycle in it, otherwise not.</p>
+<p>However, this approach requires memory complexity $O(n)$. And we will introduce <strong>Tortoise and Hare Algorithm</strong> to make up for this shortage.</p>
+<blockquote>
+<p>Hare-Tortoise algorithm is a pointer algorithm that uses only two pointers, moving through the sequence at different speeds. This algorithm is used to find a loop in a linked list. It uses two pointers one moving twice as fast as the other one. The faster one is called the faster pointer and the other one is called the slow pointer.</p>
+</blockquote>
+<p>While traversing the linked list one of these things will occur</p>
+<ul>
+<li>The Fast pointer may reach the end (<code>nullptr</code>) this shows that there is no loop in the linked list.</li>
+<li>The Fast pointer again catches the slow pointer at some time therefore a loop exists in the linked list.</li>
+</ul>
 <p>Based on the aforementioned analysis, we can code.</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">containsDuplicate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">unordered_set&lt;<span class="type">int</span>&gt; <span class="title">sets</span><span class="params">(nums.begin(), nums.end())</span></span>;</span><br><span class="line">        <span class="keyword">return</span> sets.<span class="built_in">size</span>() != nums.<span class="built_in">size</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * struct ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode *next;</span></span><br><span class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></span><br><span class="line"><span class="comment"> * &#125;;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">bool</span> <span class="title">hasCycle</span><span class="params">(ListNode *head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head == <span class="literal">nullptr</span> || head-&gt;next == <span class="literal">nullptr</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">auto</span> slow = head, fast = head;</span><br><span class="line">        <span class="type">bool</span> ret = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">while</span>(fast &amp;&amp; fast-&gt;next)&#123;</span><br><span class="line">            slow = slow-&gt;next;</span><br><span class="line">            fast = fast-&gt;next-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(slow == fast)&#123;</span><br><span class="line">                ret = <span class="literal">true</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems"></a>Related Problems</h2><ul>
+<li><a href="/2022/02/02/Leetcode142/">LeetCode 142. Linked List Cycle II</a></li>
 <li><a href="/2022/02/02/Leetcode287/">LeetCode 287. Find the Duplicate Number</a></li>
 </ul>
 

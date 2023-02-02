@@ -5,15 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>统计因果推理学习 02 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage</title>
+    <title>LeetCode 287. Find the Duplicate Number - 沈君豪个人主页 - Junhao Shen&#39;s Homepage</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="沈君豪,"> 
-    <meta name="description" content="My blogs, Gitbooks and profile.,
-本博客阅读书本为Causality Inference in Statistics: A Primer（中文译《统计因果推理入门》），作者Judea Pearl
-
-"> 
+    <meta name="description" content="My blogs, Gitbooks and profile.,Problem StatementGiven an array of integers nums containing $n + 1$ integers where each integer is ,"> 
     <meta name="author" content="Junhao Shen"> 
     <link rel="alternative" href="atom.xml" title="沈君豪个人主页 - Junhao Shen&#39;s Homepage" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -23,22 +20,16 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="统计因果推理学习 02 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
-    <meta name="twitter:description" content="My blogs, Gitbooks and profile.,
-本博客阅读书本为Causality Inference in Statistics: A Primer（中文译《统计因果推理入门》），作者Judea Pearl
-
-"/>
+    <meta name="twitter:title" content="LeetCode 287. Find the Duplicate Number - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
+    <meta name="twitter:description" content="My blogs, Gitbooks and profile.,Problem StatementGiven an array of integers nums containing $n + 1$ integers where each integer is ,"/>
     
     
     
     
     <meta property="og:site_name" content="沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="统计因果推理学习 02 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
-    <meta property="og:description" content="My blogs, Gitbooks and profile.,
-本博客阅读书本为Causality Inference in Statistics: A Primer（中文译《统计因果推理入门》），作者Judea Pearl
-
-"/>
+    <meta property="og:title" content="LeetCode 287. Find the Duplicate Number - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
+    <meta property="og:description" content="My blogs, Gitbooks and profile.,Problem StatementGiven an array of integers nums containing $n + 1$ integers where each integer is ,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -56,7 +47,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://shinkungoo.github.io"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle">统计因果推理学习 02</h3>
+    <h3 class="subtitle">LeetCode 287. Find the Duplicate Number</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -71,19 +62,43 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">统计因果推理学习 02</h1>
+        <h1 class="title">LeetCode 287. Find the Duplicate Number</h1>
         <div class="stuff">
-            <span>九月 20, 2022</span>
+            <span>二月 02, 2022</span>
             
-  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Causality-Inference/" rel="tag">Causality Inference</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Machine-Learning/" rel="tag">Machine Learning</a></li></ul>
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Tortoise-and-Hare-Algorithm/" rel="tag">Tortoise and Hare Algorithm</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <p><img src="/img/Causality/cover.png"></p>
-<p>本博客阅读书本为<em>Causality Inference in Statistics: A Primer</em>（中文译《统计因果推理入门》），作者Judea Pearl</p>
-<hr>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+            <h2 id="Problem-Statement"><a href="#Problem-Statement" class="headerlink" title="Problem Statement"></a>Problem Statement</h2><p>Given an array of integers <code>nums</code> containing $n + 1$ integers where each integer is in the range $[1, n]$ inclusive.</p>
+<p>There is only <strong>one repeated number</strong> in <code>nums</code>, <em>return this repeated number.</em></p>
+<p>You must solve the problem <strong>without</strong> modifying the array <code>nums</code> and uses only constant extra space.</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [1,3,4,2,2]</span><br><span class="line">Output: 2</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example 2:</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: nums = [3,1,3,4,2]</span><br><span class="line">Output: 3</span><br></pre></td></tr></table></figure>
+
+<h2 id="Constrain"><a href="#Constrain" class="headerlink" title="Constrain"></a>Constrain</h2><ul>
+<li><code>1 &lt;= n &lt;= 10^5</code></li>
+<li><code>nums.length == n + 1</code></li>
+<li><code>1 &lt;= nums[i] &lt;= n</code></li>
+<li>All the integers in <code>nums</code> appear only <strong>once</strong> except for <strong>precisely one integer</strong> which appears <strong>two or more</strong> times.</li>
+</ul>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>We can introduce <strong>Tortoise and Hare Algorithm</strong> to solve this problem. But why we use this cycle detection algorithm? Where is the cycle from? Considering we use this function $f(x) &#x3D; nums[x]$ to construct the sequence</p>
+<p>$$<br>x \quad nums[x] \quad nums[nums[x]] \quad nums[nums[nums[x]]] \quad \cdots<br>$$</p>
+<p>Each new element in the sequence is an element in nums at the index of the previous element. Given $x&#x3D;nums[0]$, this sequence is identical to the linked list. And due to the duplicate numbers the list will contain cycle whose entrance is duplicate node.</p>
+<p>Here is how it works:<br><img src="/img/LeetCode/287/0000.png"></p>
+<p>Based on the aforementioned analysis, we can code.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">findDuplicate</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">auto</span> slow = nums[<span class="number">0</span>], fast = nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">do</span>&#123;</span><br><span class="line">            slow = nums[slow];</span><br><span class="line">            fast = nums[nums[fast]];</span><br><span class="line">        &#125;<span class="keyword">while</span>(slow != fast);</span><br><span class="line">        slow = nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">while</span>(slow != fast)&#123;</span><br><span class="line">            slow = nums[slow];</span><br><span class="line">            fast = nums[fast];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> slow;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Related-Problems"><a href="#Related-Problems" class="headerlink" title="Related Problems"></a>Related Problems</h2><ul>
+<li><a href="/2022/02/02/Leetcode141/">LeetCode 141. Linked List Cycle</a></li>
+<li><a href="/2022/02/02/Leetcode142/">LeetCode 142. Linked List Cycle II</a></li>
+<li><a href="/2022/01/29/Leetcode217/">LeetCode 217. Contains Duplicate</a></li>
+</ul>
+
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
@@ -115,7 +130,7 @@
     </div>
     
         <div class="side">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-Statement"><span class="toc-number">1.</span> <span class="toc-text">Problem Statement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Constrain"><span class="toc-number">2.</span> <span class="toc-text">Constrain</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Analysis"><span class="toc-number">3.</span> <span class="toc-text">Analysis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Related-Problems"><span class="toc-number">4.</span> <span class="toc-text">Related Problems</span></a></li></ol>
         </div>
     
 </div>
