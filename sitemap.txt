@@ -1,3 +1,5 @@
+http://shinkungoo.github.io/profile/index.html
+http://shinkungoo.github.io/publications/index.html
 http://shinkungoo.github.io/2022/02/02/Leetcode287/
 http://shinkungoo.github.io/2022/01/29/Leetcode217/
 http://shinkungoo.github.io/2022/02/02/Leetcode142/
@@ -5,12 +7,10 @@ http://shinkungoo.github.io/2022/02/02/Leetcode141/
 http://shinkungoo.github.io/2022/01/29/Leetcode53/
 http://shinkungoo.github.io/2022/09/20/CausalityLearning02/
 http://shinkungoo.github.io/gitbook/index.html
-http://shinkungoo.github.io/publications/index.html
 http://shinkungoo.github.io/2022/10/08/MachineLearning01/
 http://shinkungoo.github.io/google91ca51534446f022.html
 http://shinkungoo.github.io/2023/01/23/LaTeXReference/
 http://shinkungoo.github.io/2022/09/20/CausalityLearning01/
-http://shinkungoo.github.io/profile/index.html
 http://shinkungoo.github.io/search/index.html
 http://shinkungoo.github.io/tags/index.html
 http://shinkungoo.github.io/categories/index.html
