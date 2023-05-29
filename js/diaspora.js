@@ -422,7 +422,7 @@ $(function() {
 						// $.get("https://v1.hitokoto.cn/", function (data) {
                         {
                         // var data = data;
-						var str =  "为人类解放奉献智慧！"
+						var str =  "为人类解放奋斗到底"
 						var options = {
 						  strings: [
 							str,
