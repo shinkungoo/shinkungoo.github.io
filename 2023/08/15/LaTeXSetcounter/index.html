@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>沈君豪个人主页 - Junhao Shen&#39;s Homepage</title>
+    <title>重置LaTeX计数器 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="沈君豪,"> 
-    <meta name="description" content="My blogs, Gitbooks and profile.,"> 
+    <meta name="description" content="My blogs, Gitbooks and profile.,LaTeX中可以被交叉引用的对象的编号均依靠其内部的计数器来记录编号顺序，LaTeX中有以下常见的编号：
+
+章节：part、chapter、section、subsection、subsubsect,"> 
     <meta name="author" content="Junhao Shen"> 
     <link rel="alternative" href="atom.xml" title="沈君豪个人主页 - Junhao Shen&#39;s Homepage" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -20,16 +22,20 @@
     
     
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
-    <meta name="twitter:description" content="My blogs, Gitbooks and profile.,"/>
+    <meta name="twitter:title" content="重置LaTeX计数器 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
+    <meta name="twitter:description" content="My blogs, Gitbooks and profile.,LaTeX中可以被交叉引用的对象的编号均依靠其内部的计数器来记录编号顺序，LaTeX中有以下常见的编号：
+
+章节：part、chapter、section、subsection、subsubsect,"/>
     
     
     
     
     <meta property="og:site_name" content="沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
     <meta property="og:type" content="object"/>
-    <meta property="og:title" content="沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
-    <meta property="og:description" content="My blogs, Gitbooks and profile.,"/>
+    <meta property="og:title" content="重置LaTeX计数器 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
+    <meta property="og:description" content="My blogs, Gitbooks and profile.,LaTeX中可以被交叉引用的对象的编号均依靠其内部的计数器来记录编号顺序，LaTeX中有以下常见的编号：
+
+章节：part、chapter、section、subsection、subsubsect,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -42,27 +48,89 @@
 <body class="loading">
     <span id="config-title" style="display:none">沈君豪个人主页 - Junhao Shen&#39;s Homepage</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                
-                    <div class="set">
-  <h2>Categories</h2>
-  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Reference/">Reference</a><span class="category-list-count">4</span></li></ul>
-</div>
-
-                
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://shinkungoo.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">重置LaTeX计数器</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">重置LaTeX计数器</h1>
+        <div class="stuff">
+            <span>八月 15, 2023</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/LaTeX/" rel="tag">LaTeX</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>LaTeX中可以被交叉引用的对象的编号均依靠其内部的计数器来记录编号顺序，LaTeX中有以下常见的编号：</p>
+<ul>
+<li><strong>章节：</strong>part、chapter、section、subsection、subsubsection、paragraph 与 subparagraph；</li>
+<li><strong>编号列表：</strong>enumi、enumii、enumiii 与 enumiv；</li>
+<li><strong>公式和图表：</strong>equation、figure 与 table。</li>
+<li><strong>其他：</strong>page、footnote 与 mpfootnote。</li>
+</ul>
+<p>可以通过 <code>\the</code> 接上计数器名称来调用计数器，比如 <code>\thechapter</code>。然后用以下方法重新定义章节编号形式，如阿拉伯数字、大小写英文字母，或大小写罗马<br>数字。</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\renewcommand</span>&#123;<span class="keyword">\thealgorithm</span>&#125;&#123;<span class="keyword">\Roman</span>&#123;counter-name&#125;&#125;</span><br><span class="line"><span class="comment">% 当然也支持 \Alph \alph \roman，CTX还支持\chinese</span></span><br></pre></td></tr></table></figure>
+
+<p>也可以使用一下命令设置计数器的开始数值，默认为0</p>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\setcounter</span>&#123;counter-name&#125;&#123;number&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+            ------ 本文结束，感谢您的阅读 ------</div>
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+            ------ End of this article, thank you for reading ------</div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="true"
+        data-ae="true"
+        data-ci="e72bca0d4d0c1003a0f1"
+        data-cs="42574625e2b1ffa49272a4c643fbe71add6cf55d"
+        data-r="shinkungoo.github.io"
+        data-o="shinkungoo"
+        data-a="shinkungoo"
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+            
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>

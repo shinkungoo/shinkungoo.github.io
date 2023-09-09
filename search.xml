@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>在Overleaf上联合编译两个.tex文件</title>
+    <url>/2022/12/10/LaTeXLinkCompile/</url>
+    <content><![CDATA[<p><img src="/img/LaTeX/cover.png"></p>
+<p>会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你<br>将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，<br>又或者需要在附录中引用正文的公式。因此我们需要联合编译两个.tex文件才可以交叉引用。</p>
+<p>在Overleaf中，我们需要在正文所对应的LaTeX文件的正文前添加如下代码：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;xr&#125;</span><br><span class="line"><span class="keyword">\makeatletter</span></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\addFileDependency</span>&#125;[1]&#123;<span class="comment">% argument=file name and extension</span></span><br><span class="line"><span class="keyword">\typeout</span>&#123;(<span class="params">#1</span>)&#125;</span><br><span class="line"><span class="keyword">\@addtofilelist</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\IfFileExists</span>&#123;<span class="params">#1</span>&#125;&#123;&#125;&#123;<span class="keyword">\typeout</span>&#123;No file <span class="params">#1</span>.&#125;&#125;</span><br><span class="line">&#125;<span class="keyword">\makeatother</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\myexternaldocument</span>&#125;[1]&#123;</span><br><span class="line"><span class="keyword">\externaldocument</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.tex&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.aux&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>请一定要检查主办方是否允许使用xr库</strong>。在添加对应代码后，如果需要联编文件<br>（比如appendix.tex），只需要在此之后添加如下代码即可。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>&#123;appendix&#125;</span><br></pre></td></tr></table></figure>
+
+<p>反过来，如果要在附录中交叉引用正文（比如main.text）的代码，只需要复制第一块<br>代码到附录中，并在附录文件中添加如下代码即可。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>&#123;main&#125;</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>Reference</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+        <tag>Overleaf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX数学符号参考</title>
     <url>/2023/01/23/LaTeXReference/</url>
-    <content><![CDATA[<p><img src="/img/LaTeXReference/cover.png"><br><strong>祝大家2023年兔年大吉，兔飞猛进！</strong></p>
+    <content><![CDATA[<p><img src="/img/LaTeX/cover.png"><br><strong>祝大家2023年兔年大吉，兔飞猛进！</strong></p>
 <h2 id="数学模式重音符"><a href="#数学模式重音符" class="headerlink" title="数学模式重音符"></a>数学模式重音符</h2><p>$\hat{a}$ $\check{a}$ $\tilde{a}$ $\acute{a}$ $\grave{a}$ $\dot{a}$ $\ddot{a}$ $\breve{a}$ $\bar{a}$ $\vec{a}$ $\widehat{A}$ $\widetilde{A}$</p>
 <table>
 <thead>
@@ -1145,23 +1169,52 @@
       </tags>
   </entry>
   <entry>
+    <title>传统图嵌入方法（Traditional Graph Embedding）</title>
+    <url>/2023/09/04/TraditionalGraphEmbedding/</url>
+    <content><![CDATA[<p>传统图学习主要注重于如何将高维图降维，并且希望最后得到的降为图可以被重建</p>
+]]></content>
+      <categories>
+        <category>Reference</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Embedding</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>重置LaTeX计数器</title>
+    <url>/2023/08/15/LaTeXSetcounter/</url>
+    <content><![CDATA[<p>LaTeX中可以被交叉引用的对象的编号均依靠其内部的计数器来记录编号顺序，LaTeX中有以下常见的编号：</p>
+<ul>
+<li><strong>章节：</strong>part、chapter、section、subsection、subsubsection、paragraph 与 subparagraph；</li>
+<li><strong>编号列表：</strong>enumi、enumii、enumiii 与 enumiv；</li>
+<li><strong>公式和图表：</strong>equation、figure 与 table。</li>
+<li><strong>其他：</strong>page、footnote 与 mpfootnote。</li>
+</ul>
+<p>可以通过 <code>\the</code> 接上计数器名称来调用计数器，比如 <code>\thechapter</code>。然后用以下方法重新定义章节编号形式，如阿拉伯数字、大小写英文字母，或大小写罗马<br>数字。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\renewcommand</span>&#123;<span class="keyword">\thealgorithm</span>&#125;&#123;<span class="keyword">\Roman</span>&#123;counter-name&#125;&#125;</span><br><span class="line"><span class="comment">% 当然也支持 \Alph \alph \roman，CTX还支持\chinese</span></span><br></pre></td></tr></table></figure>
+
+<p>也可以使用一下命令设置计数器的开始数值，默认为0</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\setcounter</span>&#123;counter-name&#125;&#123;number&#125;</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>Reference</category>
+      </categories>
+      <tags>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/google91ca51534446f022.html</url>
     <content><![CDATA[google-site-verification: google91ca51534446f022.html]]></content>
   </entry>
   <entry>
-    <title>categories</title>
-    <url>/categories/index.html</url>
+    <title>publications</title>
+    <url>/publications/index.html</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>gitbook</title>
-    <url>/gitbook/index.html</url>
-    <content><![CDATA[<p>Here are some Gitbooks written by me, including manuals, key to problems and study guide.</p>
-<p>Gitbook Index:</p>
-<p>2023-02-25: ECNU编程思维与实践课程题解——以数据结构和算法为基础</p>
-<p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
-]]></content>
   </entry>
   <entry>
     <title>profile</title>
@@ -1170,20 +1223,20 @@
 <p>Research Interests</p>
 <p>Machine Learning: Causality</p>
 <p>Email</p>
-<p>Academic related: <a href="mailto:&#115;&#x68;&#x65;&#x6e;&#x6a;&#104;&#64;&#115;&#116;&#117;&#x2e;&#x65;&#x63;&#110;&#117;&#x2e;&#x65;&#100;&#117;&#x2e;&#99;&#x6e;">&#115;&#x68;&#x65;&#x6e;&#x6a;&#104;&#64;&#115;&#116;&#117;&#x2e;&#x65;&#x63;&#110;&#117;&#x2e;&#x65;&#100;&#117;&#x2e;&#99;&#x6e;</a></p>
-<p>Other events: <a href="mailto:&#115;&#x68;&#x65;&#110;&#106;&#x75;&#x6e;&#x68;&#x61;&#111;&#49;&#51;&#x33;&#x35;&#48;&#x30;&#64;&#111;&#117;&#116;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#111;&#x6d;">&#115;&#x68;&#x65;&#110;&#106;&#x75;&#x6e;&#x68;&#x61;&#111;&#49;&#51;&#x33;&#x35;&#48;&#x30;&#64;&#111;&#117;&#116;&#108;&#x6f;&#x6f;&#107;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>Academic related: <a href="mailto:&#x73;&#104;&#x65;&#110;&#106;&#104;&#64;&#x73;&#x74;&#117;&#46;&#101;&#x63;&#110;&#x75;&#x2e;&#x65;&#100;&#117;&#46;&#99;&#x6e;">&#x73;&#104;&#x65;&#110;&#106;&#104;&#64;&#x73;&#x74;&#117;&#46;&#101;&#x63;&#110;&#x75;&#x2e;&#x65;&#100;&#117;&#46;&#99;&#x6e;</a></p>
+<p>Other events: <a href="mailto:&#115;&#x68;&#x65;&#x6e;&#106;&#x75;&#x6e;&#104;&#97;&#111;&#x31;&#51;&#x33;&#x35;&#48;&#x30;&#x40;&#x6f;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;">&#115;&#x68;&#x65;&#x6e;&#106;&#x75;&#x6e;&#104;&#97;&#111;&#x31;&#51;&#x33;&#x35;&#48;&#x30;&#x40;&#x6f;&#117;&#x74;&#108;&#111;&#x6f;&#x6b;&#x2e;&#x63;&#111;&#109;</a></p>
 <p>Academic Homepage</p>
 <p>Google Scholar</p>
 <p>ORCiD</p>
 <p>Educational Bio.</p>
-<p>Undergraduate, Computer Science and Technology, East China Normal University, Sept. 2021 ~ </p>
+<p>Undergraduate, Computer Science and Technology, East China Normal University, Sept. 2021 ~<br>Exchange Student, Computer Science, City University of Hong Kong, Sept. 2023 ~ Dec. 2023<br>Senior High Student, High School Affiliated to Southwest University, Sept. 2018 ~ Jun. 2021</p>
 <p>Honor</p>
 <p>Sept. 2022,    华东师范大学本科生特等奖学金</p>
 ]]></content>
   </entry>
   <entry>
-    <title>publications</title>
-    <url>/publications/index.html</url>
+    <title>categories</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -1195,5 +1248,14 @@
     <title>search</title>
     <url>/search/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>gitbook</title>
+    <url>/gitbook/index.html</url>
+    <content><![CDATA[<p>Here are some Gitbooks written by me, including manuals, key to problems and study guide.</p>
+<p>Gitbook Index:</p>
+<p>2023-02-25: ECNU编程思维与实践课程题解——以数据结构和算法为基础</p>
+<p>2022-08-08: 一本书入门ECNU计算机科学与技术本科</p>
+]]></content>
   </entry>
 </search>
