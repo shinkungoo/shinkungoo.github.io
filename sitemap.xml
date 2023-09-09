@@ -20,72 +20,9 @@
   </url>
   
   <url>
-    <loc>http://shinkungoo.github.io/2022/02/02/Leetcode287/</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/01/29/Leetcode217/</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/02/02/Leetcode142/</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/02/02/Leetcode141/</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/01/29/Leetcode53/</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/09/20/CausalityLearning02/</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://shinkungoo.github.io/gitbook/index.html</loc>
     
     <lastmod>2023-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/10/08/MachineLearning01/</loc>
-    
-    <lastmod>2023-01-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -102,15 +39,6 @@
   
   <url>
     <loc>http://shinkungoo.github.io/2023/01/23/LaTeXReference/</loc>
-    
-    <lastmod>2023-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/2022/09/20/CausalityLearning01/</loc>
     
     <lastmod>2023-01-23</lastmod>
     
@@ -148,57 +76,15 @@
 
   <url>
     <loc>http://shinkungoo.github.io/</loc>
-    <lastmod>2023-05-29</lastmod>
+    <lastmod>2023-09-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://shinkungoo.github.io/tags/Machine-Learning/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/Causality-Inference/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://shinkungoo.github.io/tags/LaTeX/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/STL-map/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/STL-set/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/Online-Algorithm/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/tags/Tortoise-and-Hare-Algorithm/</loc>
-    <lastmod>2023-05-29</lastmod>
+    <lastmod>2023-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -206,22 +92,8 @@
 
   
   <url>
-    <loc>http://shinkungoo.github.io/categories/Academic/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://shinkungoo.github.io/categories/Reference/</loc>
-    <lastmod>2023-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://shinkungoo.github.io/categories/LeetCode/</loc>
-    <lastmod>2023-05-29</lastmod>
+    <lastmod>2023-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
