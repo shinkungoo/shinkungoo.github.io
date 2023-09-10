@@ -15,3 +15,4 @@ http://shinkungoo.github.io/tags/Overleaf/
 http://shinkungoo.github.io/tags/Graph/
 http://shinkungoo.github.io/tags/Embedding/
 http://shinkungoo.github.io/categories/Reference/
+http://shinkungoo.github.io/categories/Academic/

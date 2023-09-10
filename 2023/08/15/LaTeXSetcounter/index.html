@@ -84,10 +84,10 @@
 <li><strong>公式和图表：</strong>equation、figure 与 table。</li>
 <li><strong>其他：</strong>page、footnote 与 mpfootnote。</li>
 </ul>
-<p>可以通过 <code>\the</code> 接上计数器名称来调用计数器，比如 <code>\thechapter</code>。然后用以下方法重新定义章节编号形式，如阿拉伯数字、大小写英文字母，或大小写罗马<br>数字。</p>
+<p>可以通过 <code>\the</code> 接上计数器名称来调用计数器，比如 <code>\thechapter</code>。然后用以下方法重新定义章节编号形式，如阿拉伯数字、大小写英文字母，或大小写罗马数字。</p>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\renewcommand</span>&#123;<span class="keyword">\thealgorithm</span>&#125;&#123;<span class="keyword">\Roman</span>&#123;counter-name&#125;&#125;</span><br><span class="line"><span class="comment">% 当然也支持 \Alph \alph \roman，CTX还支持\chinese</span></span><br></pre></td></tr></table></figure>
 
-<p>也可以使用一下命令设置计数器的开始数值，默认为0</p>
+<p>也可以使用一下命令设置计数器的开始数值，默认为0。</p>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\setcounter</span>&#123;counter-name&#125;&#123;number&#125;</span><br></pre></td></tr></table></figure>
 
 

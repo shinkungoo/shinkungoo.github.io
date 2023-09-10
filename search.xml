@@ -4,14 +4,14 @@
     <title>在Overleaf上联合编译两个.tex文件</title>
     <url>/2022/12/10/LaTeXLinkCompile/</url>
     <content><![CDATA[<p><img src="/img/LaTeX/cover.png"></p>
-<p>会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你<br>将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，<br>又或者需要在附录中引用正文的公式。因此我们需要联合编译两个.tex文件才可以交叉引用。</p>
+<p>会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式。因此我们需要联合编译两个.tex文件才可以交叉引用。</p>
 <p>在Overleaf中，我们需要在正文所对应的LaTeX文件的正文前添加如下代码：</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;xr&#125;</span><br><span class="line"><span class="keyword">\makeatletter</span></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\addFileDependency</span>&#125;[1]&#123;<span class="comment">% argument=file name and extension</span></span><br><span class="line"><span class="keyword">\typeout</span>&#123;(<span class="params">#1</span>)&#125;</span><br><span class="line"><span class="keyword">\@addtofilelist</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\IfFileExists</span>&#123;<span class="params">#1</span>&#125;&#123;&#125;&#123;<span class="keyword">\typeout</span>&#123;No file <span class="params">#1</span>.&#125;&#125;</span><br><span class="line">&#125;<span class="keyword">\makeatother</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\myexternaldocument</span>&#125;[1]&#123;</span><br><span class="line"><span class="keyword">\externaldocument</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.tex&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.aux&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><strong>请一定要检查主办方是否允许使用xr库</strong>。在添加对应代码后，如果需要联编文件<br>（比如appendix.tex），只需要在此之后添加如下代码即可。</p>
+<p><strong>请一定要检查主办方是否允许使用xr库</strong>。在添加对应代码后，如果需要联编文件（比如appendix.tex），只需要在此之后添加如下代码即可。</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>&#123;appendix&#125;</span><br></pre></td></tr></table></figure>
 
-<p>反过来，如果要在附录中交叉引用正文（比如main.text）的代码，只需要复制第一块<br>代码到附录中，并在附录文件中添加如下代码即可。</p>
+<p>反过来，如果要在附录中交叉引用正文（比如main.text）的代码，只需要复制第一块代码到附录中，并在附录文件中添加如下代码即可。</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>&#123;main&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -1171,10 +1171,16 @@
   <entry>
     <title>传统图嵌入方法（Traditional Graph Embedding）</title>
     <url>/2023/09/04/TraditionalGraphEmbedding/</url>
-    <content><![CDATA[<p>传统图学习主要注重于如何将高维图降维，并且希望最后得到的降为图可以被重建</p>
+    <content><![CDATA[<p>为了让图表示学习可以助力图分析任务，它主要有两个目标：</p>
+<ul>
+<li>原图可以从图表示空间中重建（graph reconstrution）；</li>
+<li>图表示空间可以支持进一步的图推断（graph inference），比如预测不可见的节点之间的连接。</li>
+</ul>
+<p>传统图学习主要注重于如何将高维图降维，并且希望最后得到的降维图可以被重建（然而这并不一定可以让习得的图表示空间可以用来做图推断，因为可以完全重建互不相同的图的图表示空间，也可能无法区别两个不同图之间的图半径、图直径、图周长和子图数量等$^{[1]}$）。接下来将会介绍一些传统的图嵌入方法。</p>
+<h2 id="Isomap"><a href="#Isomap" class="headerlink" title="Isomap"></a>Isomap</h2><h2 id="Locally-linear-embedding"><a href="#Locally-linear-embedding" class="headerlink" title="Locally linear embedding"></a>Locally linear embedding</h2><h2 id="Laplacian-eigenmaps"><a href="#Laplacian-eigenmaps" class="headerlink" title="Laplacian eigenmaps"></a>Laplacian eigenmaps</h2><h2 id="Locality-preserving-projection"><a href="#Locality-preserving-projection" class="headerlink" title="Locality preserving projection"></a>Locality preserving projection</h2><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] Cotta, L., Morris, C., &amp; Ribeiro, B. (2021). Reconstruction for powerful graph representations. Advances in Neural Information Processing Systems, 34, 1713-1726.<br>[2] Tenenbaum, J. B., Silva, V. D., &amp; Langford, J. C. (2000). A global geometric framework for nonlinear dimensionality reduction. science, 290(5500), 2319-2323.</p>
 ]]></content>
       <categories>
-        <category>Reference</category>
+        <category>Academic</category>
       </categories>
       <tags>
         <tag>Graph</tag>
@@ -1191,10 +1197,10 @@
 <li><strong>公式和图表：</strong>equation、figure 与 table。</li>
 <li><strong>其他：</strong>page、footnote 与 mpfootnote。</li>
 </ul>
-<p>可以通过 <code>\the</code> 接上计数器名称来调用计数器，比如 <code>\thechapter</code>。然后用以下方法重新定义章节编号形式，如阿拉伯数字、大小写英文字母，或大小写罗马<br>数字。</p>
+<p>可以通过 <code>\the</code> 接上计数器名称来调用计数器，比如 <code>\thechapter</code>。然后用以下方法重新定义章节编号形式，如阿拉伯数字、大小写英文字母，或大小写罗马数字。</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\renewcommand</span>&#123;<span class="keyword">\thealgorithm</span>&#125;&#123;<span class="keyword">\Roman</span>&#123;counter-name&#125;&#125;</span><br><span class="line"><span class="comment">% 当然也支持 \Alph \alph \roman，CTX还支持\chinese</span></span><br></pre></td></tr></table></figure>
 
-<p>也可以使用一下命令设置计数器的开始数值，默认为0</p>
+<p>也可以使用一下命令设置计数器的开始数值，默认为0。</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\setcounter</span>&#123;counter-name&#125;&#123;number&#125;</span><br></pre></td></tr></table></figure>
 
 
