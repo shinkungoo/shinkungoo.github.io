@@ -11,7 +11,7 @@
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="沈君豪,"> 
     <meta name="description" content="My blogs, Gitbooks and profile.,
-会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录,"> 
+会议论文一般都有页数限制（通常是7+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式,"> 
     <meta name="author" content="Junhao Shen"> 
     <link rel="alternative" href="atom.xml" title="沈君豪个人主页 - Junhao Shen&#39;s Homepage" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="在Overleaf上联合编译两个.tex文件 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
     <meta name="twitter:description" content="My blogs, Gitbooks and profile.,
-会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录,"/>
+会议论文一般都有页数限制（通常是7+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式,"/>
     
     
     
@@ -32,7 +32,7 @@
     <meta property="og:type" content="object"/>
     <meta property="og:title" content="在Overleaf上联合编译两个.tex文件 - 沈君豪个人主页 - Junhao Shen&#39;s Homepage"/>
     <meta property="og:description" content="My blogs, Gitbooks and profile.,
-会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录,"/>
+会议论文一般都有页数限制（通常是7+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -75,7 +75,7 @@
         </div>
         <div class="content markdown">
             <p><img src="/img/LaTeX/cover.png"></p>
-<p>会议论文一般都有页数限制（通常是7+1，多一点的8+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式。因此我们需要联合编译两个.tex文件才可以交叉引用。</p>
+<p>会议论文一般都有页数限制（通常是7+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式。因此我们需要联合编译两个.tex文件才可以交叉引用。</p>
 <p>在Overleaf中，我们需要在正文所对应的LaTeX文件的正文前添加如下代码：</p>
 <figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;xr&#125;</span><br><span class="line"><span class="keyword">\makeatletter</span></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\addFileDependency</span>&#125;[1]&#123;<span class="comment">% argument=file name and extension</span></span><br><span class="line"><span class="keyword">\typeout</span>&#123;(<span class="params">#1</span>)&#125;</span><br><span class="line"><span class="keyword">\@addtofilelist</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\IfFileExists</span>&#123;<span class="params">#1</span>&#125;&#123;&#125;&#123;<span class="keyword">\typeout</span>&#123;No file <span class="params">#1</span>.&#125;&#125;</span><br><span class="line">&#125;<span class="keyword">\makeatother</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\myexternaldocument</span>&#125;[1]&#123;</span><br><span class="line"><span class="keyword">\externaldocument</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.tex&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.aux&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 

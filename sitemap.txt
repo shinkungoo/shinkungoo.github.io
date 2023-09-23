@@ -1,7 +1,7 @@
-http://shinkungoo.github.io/2023/09/04/TraditionalGraphEmbedding/
-http://shinkungoo.github.io/2023/08/15/LaTeXSetcounter/
-http://shinkungoo.github.io/2022/12/10/LaTeXLinkCompile/
+http://shinkungoo.github.io/2023/09/21/HypergraphConv/
 http://shinkungoo.github.io/2023/01/23/LaTeXReference/
+http://shinkungoo.github.io/2022/12/10/LaTeXLinkCompile/
+http://shinkungoo.github.io/2023/08/15/LaTeXSetcounter/
 http://shinkungoo.github.io/profile/index.html
 http://shinkungoo.github.io/publications/index.html
 http://shinkungoo.github.io/gitbook/index.html
@@ -10,9 +10,10 @@ http://shinkungoo.github.io/search/index.html
 http://shinkungoo.github.io/tags/index.html
 http://shinkungoo.github.io/categories/index.html
 http://shinkungoo.github.io/
+http://shinkungoo.github.io/tags/Graph/
+http://shinkungoo.github.io/tags/Convolution/
 http://shinkungoo.github.io/tags/LaTeX/
 http://shinkungoo.github.io/tags/Overleaf/
-http://shinkungoo.github.io/tags/Graph/
-http://shinkungoo.github.io/tags/Embedding/
-http://shinkungoo.github.io/categories/Reference/
+http://shinkungoo.github.io/tags/Hypergraph/
 http://shinkungoo.github.io/categories/Academic/
+http://shinkungoo.github.io/categories/Reference/
