@@ -3,7 +3,7 @@
   <entry>
     <title>March toward the Hypergraph Convolution</title>
     <url>/2023/09/21/HypergraphConv/</url>
-    <content><![CDATA[<p>Before you reading this article, it is highly recommended that you have grasped:</p>
+    <content><![CDATA[<p><img src="/img/GNN/cover.jpg"><br>Before you reading this article, it is highly recommended that you have grasped:</p>
 <blockquote>
 <ol>
 <li>Basic math analysis (e.g., gradient, divergence, fourier transform)</li>
