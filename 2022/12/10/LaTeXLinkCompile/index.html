@@ -40,7 +40,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<meta name="generator" content="Hexo 5.4.2"></head>
+<meta name="generator" content="Hexo 5.4.2"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body class="loading">
     <span id="config-title" style="display:none">沈君豪个人主页 - Junhao Shen&#39;s Homepage</span>
@@ -77,13 +189,13 @@
             <p><img src="/img/LaTeX/cover.png"></p>
 <p>会议论文一般都有页数限制（通常是7+1）。通常这个时候， 会议举办方会允许你将更详细的描述内容放在附录里。但是有时候，我们又要在正文中引用附录里的图表、图片和公式，又或者需要在附录中引用正文的公式。因此我们需要联合编译两个.tex文件才可以交叉引用。</p>
 <p>在Overleaf中，我们需要在正文所对应的LaTeX文件的正文前添加如下代码：</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;xr&#125;</span><br><span class="line"><span class="keyword">\makeatletter</span></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\addFileDependency</span>&#125;[1]&#123;<span class="comment">% argument=file name and extension</span></span><br><span class="line"><span class="keyword">\typeout</span>&#123;(<span class="params">#1</span>)&#125;</span><br><span class="line"><span class="keyword">\@addtofilelist</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\IfFileExists</span>&#123;<span class="params">#1</span>&#125;&#123;&#125;&#123;<span class="keyword">\typeout</span>&#123;No file <span class="params">#1</span>.&#125;&#125;</span><br><span class="line">&#125;<span class="keyword">\makeatother</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\myexternaldocument</span>&#125;[1]&#123;</span><br><span class="line"><span class="keyword">\externaldocument</span>&#123;<span class="params">#1</span>&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.tex&#125;</span><br><span class="line"><span class="keyword">\addFileDependency</span>&#123;<span class="params">#1</span>.aux&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>{xr}</span><br><span class="line"><span class="keyword">\makeatletter</span></span><br><span class="line"><span class="keyword">\newcommand</span>*{<span class="keyword">\addFileDependency</span>}[1]{<span class="comment">% argument=file name and extension</span></span><br><span class="line"><span class="keyword">\typeout</span>{(<span class="params">#1</span>)}</span><br><span class="line"><span class="keyword">\@addtofilelist</span>{<span class="params">#1</span>}</span><br><span class="line"><span class="keyword">\IfFileExists</span>{<span class="params">#1</span>}{}{<span class="keyword">\typeout</span>{No file <span class="params">#1</span>.}}</span><br><span class="line">}<span class="keyword">\makeatother</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\newcommand</span>*{<span class="keyword">\myexternaldocument</span>}[1]{</span><br><span class="line"><span class="keyword">\externaldocument</span>{<span class="params">#1</span>}</span><br><span class="line"><span class="keyword">\addFileDependency</span>{<span class="params">#1</span>.tex}</span><br><span class="line"><span class="keyword">\addFileDependency</span>{<span class="params">#1</span>.aux}</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
 <p><strong>请一定要检查主办方是否允许使用xr库</strong>。在添加对应代码后，如果需要联编文件（比如appendix.tex），只需要在此之后添加如下代码即可。</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>&#123;appendix&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>{appendix}</span><br></pre></td></tr></table></figure>
 
 <p>反过来，如果要在附录中交叉引用正文（比如main.text）的代码，只需要复制第一块代码到附录中，并在附录文件中添加如下代码即可。</p>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>&#123;main&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\myexternaldocument</span>{main}</span><br></pre></td></tr></table></figure>
 
 
 
